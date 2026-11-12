@@ -32,12 +32,31 @@ const navigationData: NavigationItem[] = [
 const sectionHrefs = navigationData.map((item) => item.href);
 
 const Logo = () => (
-  <a href="/" className="shrink-0 transition-opacity hover:opacity-80">
+  <a
+    href="/"
+    className="group flex w-fit min-w-0 shrink-0 items-center gap-2.5 transition-opacity hover:opacity-90 sm:gap-3"
+  >
     <img
       src="/logo-lenar.png"
-      alt="Academia Lenar"
+      alt=""
       width={60}
+      height={60}
+      className="size-11 shrink-0 transition-transform duration-300 group-hover:scale-105 sm:size-[52px] lg:size-[60px]"
     />
+    <span className="flex min-w-0 flex-col leading-none">
+      <span className="text-[9px] font-semibold tracking-[0.3em] text-[#1B2C61]/65 uppercase sm:text-[10px]">
+        Academia
+      </span>
+      <span className="mt-1 flex items-baseline gap-1.5">
+        <span className="font-display truncate text-xl font-bold tracking-tight text-[#1B2C61] sm:text-[22px] lg:text-[26px]">
+          Lenar
+        </span>
+        <span
+          aria-hidden="true"
+          className="size-1.5 shrink-0 rounded-full bg-[#E59892] transition-transform duration-300 group-hover:scale-125"
+        />
+      </span>
+    </span>
   </a>
 );
 

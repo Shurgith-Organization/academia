@@ -3,6 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  /* Serif do emblema, usada no logotipo textual da navbar */
+  --font-display: var(--font-playfair), ui-serif, Georgia, "Times New Roman", serif;
+}
+
 @layer base {
   html {
     @apply font-sans;
